@@ -18,6 +18,6 @@ module.exports = function (req, res, next) {
         next();
     } catch (err) {
         // token is not valid
-        res.stats(401).json({ msg: 'Token is not valid. Access Denied.' });
+        res.status(401).json({ msg: 'Token is not valid. Access Denied.' });
     }
 }
